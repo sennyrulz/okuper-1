@@ -1,0 +1,113 @@
+
+[
+    {
+        "_id": "01",
+        "img": [
+            {
+            "url": "https://res.cloudinary.com/dzjl0siqy/image/upload/v1740415010/samples/balloons.jpg",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "21",
+        "price": "1,500,000",
+        "desc": "Tastefully furnished duplex with dedicated parking space.",
+        "location": "Surulere, Lagos",
+        "category": "For Rent",
+        "numberOfBed": "2 Bdr",
+        "propertyType": "Flat",
+        "numberOfBath": "1 bath"
+    },
+
+    {
+        "_id": "02",
+        "img": [
+            {
+            "url": "cloudinary_image_url",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "03",
+        "img": [
+            {
+            "url": "cloudinary_image_url",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "04",
+        "img": [
+            {
+            "url": "cloudinary_image_url",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "05",
+        "img": [
+            {
+            "url": "cloudinary_image_url",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "06",
+        "topic": "",
+        "desc": "",
+        "btn": "url"
+    },
+
+    {
+        "_id": "07",
+        "img": [
+            {
+            "url": "cloudinary_image_url",
+            "size": 123456
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    }
+]
+
