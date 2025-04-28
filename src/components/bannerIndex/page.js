@@ -4,35 +4,49 @@ import Model1 from '../bannerIndex/bannerboy.png'
 import styles from './bannerIndex.module.scss'
 import Icon from '../../../public/houseIcon.png'
 import '../../app/globals.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 function Banner() {
     return(
-        <div className={styles.Banner__Banner1} style={{margin: "-365px 0 0 0"}}>       
+        <div className={styles.Banner__Banner1} style={{margin: "-450px 0 0 0"}}>     
             <div>
                 <Image className={`${styles.Banner__bannerBoy} hidden md:block`} src={Model1} alt="bannerModel" 
                 style={{zIndex:'50', 
                 position: 'relative',
-                bottom: '-316px',
+                bottom: '-396px',
                 left:'250px'}}/>
             </div>
-            
-            <div className='text-wrap' id='bannerText' style={{zIndex:'50', position: 'relative', bottom: 125, left:820, color: '#ffff', fontWeight:'normal'}}>
-                <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
-                <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered
-                </h1>
-                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
-                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>greed of middlemen, who often charge exorbitant fees.</h3>
+
+            <div className='supportIcon h-18 w-18 ml-320 bg-amber-600 rounded-full animate-bounce'>
+            <FontAwesomeIcon icon={faHeadset} className="text-white text-7xl" />            
+            </div>  
+
+            <div className='mt-15'>  
+                <div className='mt-5' id='bannerText' style={{zIndex:'50', position: 'relative', bottom: 140, left:820, color: '#ffff', fontWeight:'normal'}}>
+                    <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
+                    <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered</h1>
+                    <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
+                    <h3 style={{fontSize: '20.5px', fontWeight: 100}}>greed of middlemen, who often charge exorbitant fees.</h3>
+                </div>
             </div>
-            
-            <Image className='Banner1' src={Banner1} alt="Banner1" 
-            width={1440} height={480} 
-            style={{marginTop:'-484px', 
-            marginBottom:'70px',
-        }}/>
-            <div className='bannerBtn' style={{marginTop:'-180px'}}>
+
+            <div className='bannerBtn' style={{position:'relative', zIndex:'50', top:'100px'}}>
                 <button className={styles.btn1}>Got a vacant home?</button>
                 <button className={styles.btn2}>Looking for a home?</button>
             </div>
+            
+            <div className="relative -top-72 -z-50 w-full h-[240px] md:h-[480px]">
+            <Image
+                src={Banner1}
+                alt="Banner1"
+                fill
+                className="object-cover"
+                sizes="100vw"
+            />
+            </div>
+            
+           
         </div>
     );
 }
