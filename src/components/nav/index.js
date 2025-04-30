@@ -26,7 +26,7 @@ function Nav() {
         <li className={styles.navbar__item}><Link href="/buy">BUY</Link></li>
         <li className={styles.navbar__item}><Link href="/shortlet">SHORTLET</Link></li>
 
-        <div className={styles.navbar__logo}>
+        <div className={`${styles.navbar__logo} md:block`}>
           <Link href="/">
             <Image src="/logo.png" alt="Logo" width={220} height={110} />
           </Link>

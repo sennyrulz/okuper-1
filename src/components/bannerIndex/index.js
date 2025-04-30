@@ -27,7 +27,7 @@ function Banner() {
             </div>  
 
             <div className='mt-15'>  
-                <div className='mt-5' id='bannerText' style={{zIndex:'50', position: 'relative', bottom: 140, left:820, color: '#ffff', fontWeight:'normal'}}>
+                <div className='mt-5 bannerText' style={{zIndex:'50', position: 'relative', bottom: 140, left:820, color: '#000', fontWeight:'normal'}}>
                     <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
                     <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered</h1>
                     <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
@@ -52,7 +52,14 @@ function Banner() {
             </div>
 
 
-            <div className='bannerBoxes space-x-18 flex' style={{ marginTop: '-337px', justify:'center', marginLeft:'65px', zIndex:100, position: 'relative'}}>
+            <div className="bannerBoxes flex flex-col md:flex-row md:space-x-18 space-y-4 md:space-y-0"
+                 style={{
+                    marginTop: '-337px',
+                    justifyContent: 'center',
+                    marginLeft: '65px',
+                    zIndex: 100,
+                    position: 'relative'
+                  }}>
                 <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
                     <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
                     <span className='font-semibold'>Background Check<br />required for home<br />owners and tenants.</span>
