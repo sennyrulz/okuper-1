@@ -6,18 +6,22 @@ import Icon from '../../../public/houseIcon.png'
 import '../../app/globals.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+
 
 function Banner() {
     return(
-        <div className={styles.Banner__Banner1} style={{margin: "-450px 0 0 0"}}>     
+            
+        <div className={styles.Banner__Banner1} style={{margin: "-450px 0 0 0"}}>
             <div>
                 <Image className={`${styles.Banner__bannerBoy} hidden md:block`} src={Model1} alt="bannerModel" 
-                style={{zIndex:'50', 
+                style={{zIndex: 50, 
                 position: 'relative',
                 bottom: '-396px',
                 left:'250px'}}/>
             </div>
 
+        
             <div className='supportIcon h-18 w-18 ml-320 bg-amber-600 rounded-full animate-bounce'>
             <FontAwesomeIcon icon={faHeadset} className="text-white text-7xl" />            
             </div>  
@@ -35,8 +39,9 @@ function Banner() {
                 <button className={styles.btn1}>Got a vacant home?</button>
                 <button className={styles.btn2}>Looking for a home?</button>
             </div>
+
             
-            <div className="relative -top-72 -z-50 w-full h-[240px] md:h-[480px]">
+            <div className="relative -top-71 -z-50 w-full h-[240px] md:h-[480px]">
             <Image
                 src={Banner1}
                 alt="Banner1"
@@ -45,8 +50,31 @@ function Banner() {
                 sizes="100vw"
             />
             </div>
-            
-           
+
+
+            <div className='bannerBoxes space-x-18 flex' style={{ marginTop: '-337px', justify:'center', marginLeft:'65px', zIndex:100, position: 'relative'}}>
+                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
+                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
+                    <span className='font-semibold'>Background Check<br />required for home<br />owners and tenants.</span>
+                </div>
+                
+                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-10 pt-7 shadow-lg">
+                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px', zIndex:'150'}} /><br/>
+                    <span className='font-semibold'>Property ratings by<br />tenants and flagging<br />of suspicious accounts</span>
+                </div>
+                
+                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
+                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
+                    <span className='font-semibold'>Tenants NIN identity,<br />proof, financial record<br />and occupation.</span>
+                </div>
+                
+                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
+                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
+                    <span className='font-semibold'>All communications<br />securely happens<br />within the platform.</span>
+                </div>
+            </div> 
+
+  
         </div>
     );
 }

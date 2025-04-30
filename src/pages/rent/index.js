@@ -1,7 +1,7 @@
 'useclient'
 import React from 'react';
 // import { useEffect, useState } from 'react'
-import Nav from '@/components/nav/page';
+import Nav from '@/components/nav';
 import data from '../../data/products.json'
 import AdBannerCard from '@/components/adBannerCard'
 import PropertyCard from '@/components/propertyCards';
