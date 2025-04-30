@@ -32,19 +32,22 @@
   min-width: 50%;
 }
 
+
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
   .Banner__Banner1 {
     display: flex;
+    
     flex-direction: column;
     align-items: center;
-    margin: -190px 0 0 0 !important;
+    margin-top: -190px !important;
     padding: 1rem;
   }
 
   .bannerText {
     position: relative;
-    left: 0 !important;
+    right: 200 !important;
     bottom: 0 !important;
     text-align: center;
     margin-top: 2rem;
@@ -84,20 +87,11 @@
   .supportIcon {
     margin: 1rem auto;
   }
-}
-
-@media (max-width: 768px) {
-  .bannerText {
-    flex: start;
-    text-align: start;
-    margin-top: 2rem;
-    max-width: 100%;
-    padding: 0 1rem;
-    
-  } 
-
   .bannerBoxes {
-   grid-auto-flow: row;
-    justify-items: center;
-  }
+    grid-auto-flow: row;
+     justify-items: center;
+   }
 }
+
+
+

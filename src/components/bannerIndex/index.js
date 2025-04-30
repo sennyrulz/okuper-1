@@ -22,19 +22,25 @@ function Banner() {
             </div>
 
         
-            <div className='supportIcon h-18 w-18 ml-320 bg-amber-600 rounded-full animate-bounce'>
+            <div className='supportIcon h-18 w-18 mb-15 ml-320 bg-amber-600 rounded-full animate-bounce'> 
+        
             <FontAwesomeIcon icon={faHeadset} className="text-white text-7xl" />            
             </div>  
 
-            <div className='mt-15'>  
-                <div className='mt-5 bannerText' style={{zIndex:'50', position: 'relative', bottom: 140, left:820, color: '#000', fontWeight:'normal'}}>
-                    <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
-                    <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered</h1>
-                    <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
-                    <h3 style={{fontSize: '20.5px', fontWeight: 100}}>greed of middlemen, who often charge exorbitant fees.</h3>
-                </div>
+            <div className='mt-5' 
+                style={{   
+                    zIndex:'50', 
+                    position: 'relative', 
+                    bottom: 140, left:820, 
+                    color: '#000', 
+                    fontWeight:'normal'
+                }}>  
+                <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
+                <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered</h1>
+                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
+                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>greed of middlemen, who often charge exorbitant fees.</h3>
+               
             </div>
-
             <div className='bannerBtn' style={{position:'relative', zIndex:'50', top:'100px'}}>
                 <button className={styles.btn1}>Got a vacant home?</button>
                 <button className={styles.btn2}>Looking for a home?</button>
@@ -52,7 +58,7 @@ function Banner() {
             </div>
 
 
-            <div className="bannerBoxes flex flex-col md:flex-row md:space-x-18 space-y-4 md:space-y-0"
+            <div className="bannerBoxes flex flex-col md:flex-row md:space-x-18 space-y-4 md:space-y-0 mb-10"
                  style={{
                     marginTop: '-337px',
                     justifyContent: 'center',
