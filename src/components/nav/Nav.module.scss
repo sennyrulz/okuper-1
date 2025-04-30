@@ -8,15 +8,48 @@ $hover-color: #0e1d48;
   align-items: center;
   padding: 0.5rem 1.5rem;
   position: relative;
+  z-index: 50;
   background-color: $primary-color;
   color: $secondary-color;
   width: 100%;
 
+  // Hamburger Menu Icon
+  &__hamburger {
+    display: none; // Hide by default on large screens
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: $secondary-color;
+  }
+
+  // Shared Logo Styling
   &__logo {
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
-    justify-items: center;
+    margin: 0 auto;
+  }
+
+  // Show mobile logo only on small screens
+  &__logo--mobile {
+    display: block;
+    position: relative;
+    left: -20px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  // Show desktop logo only on larger screens
+  &__logo--desktop {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
   }
 
   &__menu {
@@ -35,7 +68,6 @@ $hover-color: #0e1d48;
         font-weight: 300;
         transition: color 0.3s;
         font-size: 16px;
-        z-index: 150;
 
         &:hover {
           color: $hover-color;
@@ -44,28 +76,19 @@ $hover-color: #0e1d48;
     }
   }
 
-
-  &__hamburger {
-    display: none;
-  }
-
-  &__menu--open {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+  // Mobile View adjustments
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
     &__logo {
-      margin-bottom: 1rem;
+      order: -1;
+      margin-left: 10px;
     }
 
     &__menu {
-      display: none; // 🚫 Hide by default on mobile
+      display: none;
       flex-direction: column;
       width: 100%;
       gap: 1rem;
@@ -80,17 +103,31 @@ $hover-color: #0e1d48;
       right: 0;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease-in-out;
+      z-index: 50;
     }
 
     &__menu--open {
-      display: flex !important; // ✅ Show only when isMenuOpen is true
+      display: flex !important;
     }
 
     &__hamburger {
       display: block;
-      cursor: pointer;
-        font-size: 1.5rem;
-        color: $secondary-color;
+      margin-top: 30px;
+    }
+  }
+
+  // Laptop/Desktop View adjustments
+  @media (min-width: 768px) {
+    &__logo {
+      margin: 0 auto;
+    }
+
+    &__menu {
+      justify-content: center;
+    }
+
+    &__hamburger {
+      display: none;
     }
   }
 }

@@ -1,95 +1,94 @@
-import Image from 'next/image'
-import Banner1 from '../../components/bannerIndex/Banner_2.png'
-import Model1 from '../bannerIndex/bannerboy.png'
-import styles from './bannerIndex.module.scss'
-import Icon from '../../../public/houseIcon.png'
-import '../../app/globals.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeadset } from '@fortawesome/free-solid-svg-icons';
-import { faCircleCheck} from '@fortawesome/free-solid-svg-icons';
-
+// src/components/Banner.jsx or Banner.tsx
+import Image from "next/image";
+import Banner1 from "../../components/bannerIndex/Banner_2.png";
+import Model1 from "../bannerIndex/bannerboy.png";
+import Icon from "../../../public/houseIcon.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeadset, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
-    return(
-            
-        <div className={styles.Banner__Banner1} style={{margin: "-450px 0 0 0"}}>
-            <div>
-                <Image className={`${styles.Banner__bannerBoy} hidden md:block`} src={Model1} alt="bannerModel" 
-                style={{zIndex: 50, 
-                position: 'relative',
-                bottom: '-396px',
-                left:'250px'}}/>
-            </div>
+  return (
+    <div className="relative md:mt-8 w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-10">
+      {/* Model Image */}
+      <div className="absolute bottom-20 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
+        <Image
+          src={Model1}
+          alt="bannerModel"
+          className="h-[537px] w-auto object-contain"
+        />
+      </div>
 
-        
-            <div className='supportIcon h-18 w-18 mb-15 ml-320 bg-amber-600 rounded-full animate-bounce'> 
-        
-            <FontAwesomeIcon icon={faHeadset} className="text-white text-7xl" />            
-            </div>  
+      <div className="relative w-full min-h-[350px] md:h-[480px]">
+        {/* Background Image */}
+        <Image
+          src={Banner1}
+          alt="Banner1"
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
 
-            <div className='mt-5' 
-                style={{   
-                    zIndex:'50', 
-                    position: 'relative', 
-                    bottom: 140, left:820, 
-                    color: '#000', 
-                    fontWeight:'normal'
-                }}>  
-                <Image className='houseIcon' src={Icon} alt="houseIcon" width={78} height={85} />
-                <h1 style={{fontSize: '55px', fontWeight:'150'}}>We got you covered</h1>
-                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>The Nigerian rental market has become tainted by the </h3>
-                <h3 style={{fontSize: '20.5px', fontWeight: 100}}>greed of middlemen, who often charge exorbitant fees.</h3>
-               
-            </div>
-            <div className='bannerBtn' style={{position:'relative', zIndex:'50', top:'100px'}}>
-                <button className={styles.btn1}>Got a vacant home?</button>
-                <button className={styles.btn2}>Looking for a home?</button>
-            </div>
-
-            
-            <div className="relative -top-71 -z-50 w-full h-[240px] md:h-[480px]">
-            <Image
-                src={Banner1}
-                alt="Banner1"
-                fill
-                className="object-cover"
-                sizes="100vw"
-            />
-            </div>
-
-
-            <div className="bannerBoxes flex flex-col md:flex-row md:space-x-18 space-y-4 md:space-y-0 mb-10"
-                 style={{
-                    marginTop: '-337px',
-                    justifyContent: 'center',
-                    marginLeft: '65px',
-                    zIndex: 100,
-                    position: 'relative'
-                  }}>
-                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
-                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
-                    <span className='font-semibold'>Background Check<br />required for home<br />owners and tenants.</span>
-                </div>
-                
-                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-10 pt-7 shadow-lg">
-                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px', zIndex:'150'}} /><br/>
-                    <span className='font-semibold'>Property ratings by<br />tenants and flagging<br />of suspicious accounts</span>
-                </div>
-                
-                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
-                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
-                    <span className='font-semibold'>Tenants NIN identity,<br />proof, financial record<br />and occupation.</span>
-                </div>
-                
-                <div className=" w-[270px] and h-[160px] bg-sky-100 rounded-xl pl-11 pt-6 shadow-lg">
-                    <FontAwesomeIcon icon={faCircleCheck} style={{color: "#0e1d48",height: '25px', marginBottom: '10px'}} /><br/>
-                    <span className='font-semibold'>All communications<br />securely happens<br />within the platform.</span>
-                </div>
-            </div> 
-
-  
+        {/* Support Icon */}
+        <div className="absolute top-10 right-4 md:top-10 md:right-10 h-12 w-12 md:h-16 md:w-16 bg-amber-600 rounded-full animate-bounce z-30 flex items-center justify-center">
+          <FontAwesomeIcon
+            icon={faHeadset}
+            className="text-white text-2xl md:text-4xl"
+          />
         </div>
-    );
+
+        {/* Content Over Banner */}
+        <div className="relative md:absolute md:inset-0 z-20 flex flex-col items-center md:items-start justify-center px-8 md:px-4 py-8 md:py-0 md:ml-[60%] z-20 text-white md:mt-[-80px] text-center md:text-left">
+          <Image
+            className="self-start mb-2 md:mb-0"
+            src={Icon}
+            alt="houseIcon"
+            width={60}
+            height={65}
+          />
+          <h1 className="text-2xl md:text-4xl font-light mt-4 md:mt-8">
+            We got you covered
+          </h1>
+          <h3 className="text-sm md:text-lg font-light mt-2">
+            The Nigerian rental market has become tainted by the
+          </h3>
+          <h3 className="text-sm md:text-lg font-light">
+            greed of middlemen, who often charge exorbitant fees.
+          </h3>
+
+          {/* Buttons */}
+          <div className="mt-4 md:mt-6 flex flex-col md:flex-row gap-3 md:gap-4 w-full md:w-auto">
+            <button className="bg-[#0E1D48] text-white px-4 py-2 md:px-8 md:py-3 rounded-md text-sm md:text-base hover:bg-white hover:text-[#0E1D48] transition">
+              Got a vacant home?
+            </button>
+            <button className="bg-white text-[#0E1D48] px-4 py-2 md:px-8 md:py-3 rounded-md text-sm md:text-base hover:bg-gray-300 transition">
+              Looking for a home?
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Feature Boxes */}
+      <div className="relative z-30 hidden md:flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-[-60px] px-4 md:px-0 pb-6">
+        {[
+          "Background Check required for home owners and tenants.",
+          "Property ratings by tenants and flagging of suspicious accounts",
+          "Tenants NIN identity, proof, financial record and occupation.",
+          "All communications securely happens within the platform.",
+        ].map((text, index) => (
+          <div
+            key={index}
+            className="w-full md:w-[250px] bg-sky-100 rounded-xl px-5 py-4 shadow-md text-center md:text-left"
+          >
+            <FontAwesomeIcon
+              icon={faCircleCheck}
+              className="text-[#0E1D48] text-lg md:text-xl mb-2"
+            />
+            <p className="font-semibold text-xs md:text-sm">{text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
-export default Banner
+export default Banner;
