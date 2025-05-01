@@ -1,5 +1,7 @@
 'useclient';
+
 import Image from 'next/image';
+import data from '../../data/products.json';
 
 const PropertyCard = ({ _id, img, availableUnit, price, desc, location, category, numberOfBed, propertyType, numberOfBath }) => (
 

@@ -4,7 +4,7 @@ import React from 'react';
 import Nav from '@/components/nav';
 import data from '../../data/products.json'
 import AdBannerCard from '@/components/adBannerCard'
-import PropertyCard from '@/components/propertyCards';
+import PropertyCard from '@/components/propertyCard';
 
 
 
