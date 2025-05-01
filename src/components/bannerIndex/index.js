@@ -8,7 +8,7 @@ import { faHeadset, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
   return (
-    <div className="relative md:mt-8 w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-10">
+    <div className="relative w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-20">
       {/* Model Image */}
       <div className="absolute bottom-20 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
         <Image
