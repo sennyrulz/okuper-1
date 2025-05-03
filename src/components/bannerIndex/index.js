@@ -8,9 +8,9 @@ import { faHeadset, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
   return (
-    <div className="relative w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-20">
+    <div className="relative md:mt-8 w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-10">
       {/* Model Image */}
-      <div className="absolute bottom-20 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
+      <div className="absolute bottom-30 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
         <Image
           src={Model1}
           alt="bannerModel"
@@ -18,7 +18,7 @@ function Banner() {
         />
       </div>
 
-      <div className="relative w-full min-h-[350px] md:h-[480px]">
+      <div className="relative w-full min-h-[350px] md:h-[480px] ">
         {/* Background Image */}
         <Image
           src={Banner1}
@@ -37,7 +37,7 @@ function Banner() {
         </div>
 
         {/* Content Over Banner */}
-        <div className="relative md:absolute md:inset-0 z-20 flex flex-col items-center md:items-start justify-center px-8 md:px-4 py-8 md:py-0 md:ml-[60%] z-20 text-white md:mt-[-80px] text-center md:text-left">
+        <div className="relative md:absolute md:inset-0 z-20 flex flex-col items-center md:items-start justify-center px-8 md:px-4 py-8 md:py-0 md:ml-[60%] text-white md:mt-[-80px] text-center md:text-left">
           <Image
             className="self-start mb-2 md:mb-0"
             src={Icon}
@@ -49,9 +49,7 @@ function Banner() {
             We got you covered
           </h1>
           <h3 className="text-sm md:text-lg font-light mt-2">
-            The Nigerian rental market has become tainted by the
-          </h3>
-          <h3 className="text-sm md:text-lg font-light">
+            The Nigerian rental market has become tainted by the <br />
             greed of middlemen, who often charge exorbitant fees.
           </h3>
 
@@ -68,7 +66,7 @@ function Banner() {
       </div>
 
       {/* Feature Boxes */}
-      <div className="relative z-30 hidden md:flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-[-60px] px-4 md:px-0 pb-6">
+      <div className="relative z-30 hidden md:flex flex-col md:flex-row justify-center gap-8 md:gap-6 mt-[-60px] px-4 md:px-0 pb-6">
         {[
           "Background Check required for home owners and tenants.",
           "Property ratings by tenants and flagging of suspicious accounts",
@@ -77,7 +75,7 @@ function Banner() {
         ].map((text, index) => (
           <div
             key={index}
-            className="w-full md:w-[250px] bg-sky-100 rounded-xl px-5 py-4 shadow-md text-center md:text-left"
+            className="w-full md:w-[250px] bg-sky-100 rounded-xl px-9 py-8 shadow-md text-center md:text-left"
           >
             <FontAwesomeIcon
               icon={faCircleCheck}

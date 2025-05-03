@@ -2,28 +2,28 @@
 [
     {
         "_id": "01",
-        "img": [
+        "Img": [
             {
-            "url": "https://res.cloudinary.com/dzjl0siqy/image/upload/v1740415010/samples/balloons.jpg",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
-        "availableUnit": "21",
-        "price": "1,500,000",
-        "desc": "Tastefully furnished duplex with dedicated parking space.",
-        "location": "Surulere, Lagos",
-        "category": "For Rent",
-        "numberOfBed": "2 Bdr",
-        "propertyType": "Flat",
-        "numberOfBath": "1 bath"
+        "availableUnit": 21,
+        "price": "string",
+        "desc": "string",
+        "location": "string",
+        "category": "string",
+        "numberOfBed": "string",
+        "propertyType": "string",
+        "numberOfBath": "string"
     },
 
     {
         "_id": "02",
-        "img": [
+        "Img": [
             {
-            "url": "cloudinary_image_url",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
         "availableUnit": "",
@@ -37,10 +37,10 @@
 
     {
         "_id": "03",
-        "img": [
+        "Img": [
             {
-            "url": "cloudinary_image_url",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
         "availableUnit": "",
@@ -54,10 +54,10 @@
 
     {
         "_id": "04",
-        "img": [
+        "Img": [
             {
-            "url": "cloudinary_image_url",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
         "availableUnit": "",
@@ -71,10 +71,10 @@
 
     {
         "_id": "05",
-        "img": [
+        "Img": [
             {
-            "url": "cloudinary_image_url",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
         "availableUnit": "",
@@ -90,15 +90,15 @@
         "_id": "06",
         "topic": "",
         "desc": "",
-        "btn": "url"
+        "btn": "publicId"
     },
 
     {
         "_id": "07",
-        "img": [
+        "Img": [
             {
-            "url": "cloudinary_image_url",
-            "size": 123456
+            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "size": 2000
             }
         ],
         "availableUnit": "",
