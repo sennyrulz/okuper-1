@@ -1,4 +1,3 @@
-
 [
     {
         "_id": "01",
@@ -8,14 +7,14 @@
             "size": 2000
             }
         ],
-        "availableUnit": 21,
-        "price": "string",
-        "desc": "string",
-        "location": "string",
-        "category": "string",
-        "numberOfBed": "string",
-        "propertyType": "string",
-        "numberOfBath": "string"
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "location": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
     },
 
     {
@@ -90,7 +89,7 @@
         "_id": "06",
         "topic": "",
         "desc": "",
-        "btn": "publicId"
+        "btn": "url"
     },
 
     {

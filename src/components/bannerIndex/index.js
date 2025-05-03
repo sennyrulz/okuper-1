@@ -8,9 +8,9 @@ import { faHeadset, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
   return (
-    <div className="relative md:mt-8 w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-0 z-10">
+    <div className="relative  w-full overflow-visible bg-white px-10 md:px-0 mb-10 md:mb-8 z-10">
       {/* Model Image */}
-      <div className="absolute bottom-30 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
+      <div className="absolute bottom-24 left-[33%] transform -translate-x-1/2 z-30 hidden md:block">
         <Image
           src={Model1}
           alt="bannerModel"
@@ -66,7 +66,7 @@ function Banner() {
       </div>
 
       {/* Feature Boxes */}
-      <div className="relative z-30 hidden md:flex flex-col md:flex-row justify-center gap-8 md:gap-6 mt-[-60px] px-4 md:px-0 pb-6">
+      <div className="relative z-30 md:top-100 md:flex md:flex-row md:gap-6 md:px-0 py-0 flex-row lg:top-0 justify-center gap-8 mt-[-60px] px-4 pb-0">
         {[
           "Background Check required for home owners and tenants.",
           "Property ratings by tenants and flagging of suspicious accounts",
