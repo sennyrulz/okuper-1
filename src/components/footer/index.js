@@ -33,8 +33,8 @@ function Footer() {
         </div>
       </div>
 
-      <div className="bg-blue-950 w-full text-white mt-10 py-4 font-bold">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between text-center text-xs font-light gap-2 md:gap-0 px-4">
+      <div className="bg-blue-950 text-white mt-10 py-4 mx-[-25] font-bold md:w-screen max-w-screen">
+        <div className="flex flex-col md:flex-row justify-between text-center text-xs font-light gap-4 md:gap-0 px-20">
           <p>Okuper 2025</p>
           <p>Copyright © Fabletoon Limited. All Rights Reserved.</p>
           <p>Terms</p>
