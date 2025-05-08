@@ -47,3 +47,7 @@ body {
   z-index: 50;       
   }
 }
+
+.bannerBoxes::-webkit-scrollbar {
+  display: none;
+}

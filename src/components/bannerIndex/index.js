@@ -81,9 +81,12 @@ function Banner() {
       </div>
 
       {/* Feature Boxes */}
-      <div className="bannerBoxes relative z-30 top-20 md:row md:gap-6 md:px-30 
-        py-0 flex flex-row md:top-0 gap-8 mt-[-140px] md:mt-[-80px] px-4 pb-0 md:overflow-hidden 
-        overflow-x-scroll md:w-fit max-w-fit">
+      <div className="bannerBoxes relative z-30 top-20 md:row md:gap-6 md:px-30 mb-3 
+        w-full py-0 flex flex-row md:top-0 gap-8 mt-[-140px] md:mt-[-80px] px-4 pb-3 
+        md:overflow-hidden overflow-x-auto md:w-auto max-w-auto"
+        style={{ scrollbarWidth: 'none', // Firefox
+         msOverflowStyle: 'none', // IE & Edge
+        }}>
 
         {["Background Check required for home owners and tenants.",
           "Property ratings by tenants and flagging of suspicious accounts",
