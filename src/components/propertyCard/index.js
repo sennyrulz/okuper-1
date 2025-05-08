@@ -42,13 +42,17 @@ import React from 'react';
 import Image from 'next/image';
 
 const PropertyCard = ({ property }) => {
+  const imageUrl = property?.Img?.[0]?.publicId
+    ? `https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/${property.Img[0].publicId}`
+    : "/placeholder.jpg"; // For Fallback if image is missing
+
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       {/* Image */}
       <div className="relative w-full h-48">
         <Image
-          src={property.image}
-          alt={property.title}
+          src={imageUrl}
+          alt={property.desc || "Property"}
           width={500}
           height={300}
           className="w-full h-48 object-cover"
@@ -56,29 +60,21 @@ const PropertyCard = ({ property }) => {
         />
       </div>
 
-      <div className="p-4 mb-5 text-center text-indigo-950">
-        {/* Price */}
-        <p className="text-xl font-bold">{property.price}</p>
+      <div className="p-4 mb-5 text-center">
+        <p className="text-xl font-bold text-black">{property.price || "₦0"}</p>
+        <p className="text-gray-600 mt-2">{property.desc || "No description"}</p>
+        <p className="text-md font-medium mt-1">{property.location || "Location not set"}</p>
+        <p className="text-indigo-900 font-semibold mt-1">{property.category || "For Rent"}</p>
 
-        {/* Description */}
-        <p className="mt-2">{property.description}</p>
-
-        {/* Location */}
-        <p className="text-md font-medium mt-1">{property.location}, Lagos State</p>
-
-        {/* For Rent */}
-        <p className="font-semibold mt-1">{property.forRentSale}</p>
-
-        {/* Boxes */}
         <div className="flex justify-center gap-3 mt-4">
-          <div className="bg-indigo-950 px-4 py-2 rounded text-sm font-medium text-white">
-            {property.bedrooms} Bdr
+          <div className="bg-indigo-900 px-4 py-2 rounded text-sm font-medium text-white">
+            {property.numberOfBed || 0} Bdr
           </div>
-          <div className="bg-indigo-950 px-4 py-2 rounded text-sm font-medium text-white">
-            {property.homeType}
+          <div className="bg-indigo-900 px-4 py-2 rounded text-sm font-medium text-white">
+            {property.propertyType || "Type"}
           </div>
-          <div className="bg-indigo-950 px-4 py-2 rounded text-sm font-medium text-white">
-            {property.bathrooms} Bath
+          <div className="bg-indigo-900 px-4 py-2 rounded text-sm font-medium text-white">
+            {property.numberOfBath || 0} Bath
           </div>
         </div>
       </div>
@@ -87,4 +83,5 @@ const PropertyCard = ({ property }) => {
 };
 
 export default PropertyCard;
+
 
