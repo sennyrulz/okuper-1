@@ -64,7 +64,7 @@ const PropertyCard = ({ property }) => {
         <p className="text-gray-600 mt-2">{property.description}</p>
 
         {/* Location */}
-        <p className="text-lg font-medium mt-1">{property.location}, Lagos State</p>
+        <p className="text-md font-medium mt-1">{property.location}, Lagos State</p>
 
         {/* For Rent */}
         <p className="text-indigo-900 font-semibold mt-1">For Rent</p>
