@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 // import { CldImage } from 'next-cloudinary';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
