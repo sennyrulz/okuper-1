@@ -24,16 +24,16 @@ function PropertyCard({_id, Img, availableUnit, price, desc, location,category, 
       <p className='hidden'>{_id}</p>
      
       {/* ✅ Use legacyBehavior to allow custom <a> with onClick */}
-      <Link href="/savedHomes" legacyBehavior passHref>
-        <a onClick={handleSave}
+      <Link href="/savedHomes" passHref
+        onClick={handleSave}
           className=" ml-60 cursor-pointer"
           title="Save to Favorites">
-
+      
           <FontAwesomeIcon
             icon={faCircleCheck}
             className="text-blue-800/65 text-4xl md:text-4xl"
           />
-        </a>
+        
       </Link>
 
       <div className="relative w-full h-48">
@@ -43,18 +43,17 @@ function PropertyCard({_id, Img, availableUnit, price, desc, location,category, 
           height={500}
           alt="Property image"
           className=" w-full h-48rounded-xl object-cover"
-          priority
-        />
+          priority/>
       </div>
 
       <div className='bg-blue-800/65 text-white pl-3 rounded-2xl w-42 mt-[-100] mb-15'>
         <p className="text-xl text-white font-medium ">
           {availableUnit || 0} units available</p>
-       </div>
-      <h3 className="text-3xl font-semibold mt-5">N{price || '0'} / yr</h3>
-      <p className="text-lg text-gray-600">{desc || 'No description'}</p>
-      <p className="text-lg text-gray-600">{location || 'No location'}</p>
-      <p className="text-lg text-gray-600">{category || 'No category'}</p>
+      </div>
+        <h3 className="text-3xl font-semibold mt-5">N{price || '0'} / yr</h3>
+        <p className="text-lg text-gray-600">{desc || 'No description'}</p>
+        <p className="text-lg text-gray-600">{location || 'No location'}</p>
+        <p className="text-lg text-gray-600">{category || 'No category'}</p>
 
       <div className="flex gap-4 mt-2 text-md font-black cardBtn mb-5">
         <span className='cardBtnItems bg-blue-950 rounded-md text-white px-5'>{numberOfBed || 0} Bdr</span>

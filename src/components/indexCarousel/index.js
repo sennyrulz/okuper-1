@@ -1,14 +1,17 @@
 import PropertyCard from "../propertyCard";
+import AdBanner from "../adBannerCard/index";
 
 const IndexCarousel = ({ rent }) => {
+    //Slice first 8 items from mixed array
+    const slicedItems = rent.slice(0, 8);
     return (
-        <div className="row md:flex overflow-x-auto space-x-6 px-10 scrollbar-hide">
-            {rent.map((property, index) => (
-                <PropertyCard 
-                key={property.id || index} data={property} />
-            ))}
+        <div className="md:flex row carousel md:space-y-6 space-y-6 space-x-6 justify-between px-10 overflow-x-auto">
+          {slicedItems.map((item, index) => (
+            item.isAd ? (
+              <AdBanner key={`ad-${index}`} desc={item.desc} topic={item.topic} btn={item.btn} />
+            ) : (<PropertyCard key={item._id} {...item} />)))}
         </div>
-    );
-};
+      );
+    };
 
 export default IndexCarousel;

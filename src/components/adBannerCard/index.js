@@ -1,4 +1,5 @@
 'useclient'
+import Link from 'next/link'
 
 
 const AdBannerCard = ({ topic, desc, btn }) => (
@@ -11,3 +12,5 @@ const AdBannerCard = ({ topic, desc, btn }) => (
       )}
     </div>
   );
+
+  export default AdBannerCard;
