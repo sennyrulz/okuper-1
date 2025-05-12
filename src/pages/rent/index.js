@@ -94,14 +94,7 @@ const Rent = () => {
 // const Rent = () => {
 //   return (
 //     <div className="px-4 md:px-12 py-8 space-y-8">
-//       {/*  Search Bar */}
-// <div className="w-full">
-//   <input
-//     type="text"
-//     placeholder="Search location, property type, or keywords"
-//     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
-//   />
-// </div>
+//       <Nav />
 
 //       {/* Filter Bar */}
 //       <FilterBar />
@@ -116,7 +109,7 @@ const Rent = () => {
 //         <AdBannerCard
 //           topic="WorkmanHQ"
 //           desc="Get verified agents & homes without stress."
-//           btn="/agents"
+//           btn="/get-started"
 //         />
 //       </div>
 //     </div>
