@@ -1,18 +1,14 @@
 import PropertyCard from "../propertyCard";
 
-
-function indexCarousel() {
-    return(
-        <div className="md:flex row carousel md:space-y-6 space-y-6 space-x-6 justify-between px-10">
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
-            <PropertyCard/>
+const IndexCarousel = ({ rent }) => {
+    return (
+        <div className="row md:flex overflow-x-auto space-x-6 px-10 scrollbar-hide">
+            {rent.map((property, index) => (
+                <PropertyCard 
+                key={property.id || index} data={property} />
+            ))}
         </div>
-    )
-}
-export default indexCarousel;
+    );
+};
+
+export default IndexCarousel;

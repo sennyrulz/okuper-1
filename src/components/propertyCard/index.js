@@ -2,15 +2,37 @@
 import { CldImage } from 'next-cloudinary';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link'
 
 function PropertyCard({_id, Img, availableUnit, price, desc, location,category, numberOfBed, propertyType, numberOfBath}) {
+  
   const fallbackPublicId = "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew";
   const publicId = Img?.[0]?.publicId || fallbackPublicId;
+
+  // Save property to localStorage (or any preferred method)
+  const handleSave = () => {
+    const saved = JSON.parse(localStorage.getItem('savedHomes')) || [];
+    const alreadyExists = saved.some((item) => item._id === _id);
+    if (!alreadyExists) {
+      saved.push({ _id, Img, availableUnit, price, desc, location, category, numberOfBed, propertyType, numberOfBath });
+      localStorage.setItem('savedHomes', JSON.stringify(saved));
+    }
+  };
 
   return (
     <div className="border rounded-2xl p-4 shadow-md bg-white w-80 overflow-hidden hover:shadow-lg transition-shadow duration-300 ">
       <p className='hidden'>{_id}</p>
-      <FontAwesomeIcon icon={faCircleCheck} className="text-blue-800 text-2xl md:text-4xl ml-55 mt-5" />
+     
+     {/*Link to SavedHomes */}
+     <Link href="/savedHomes"
+        onClick={handleSave} 
+        className="absolute top-4 right-4" 
+        title="Save to Favorites">
+
+        <FontAwesomeIcon
+          icon={faCircleCheck}
+          className="text-blue-800 text-2xl md:text-4xl"/>
+      </Link>
 
       <div className="relative w-full h-48">
         <CldImage
@@ -23,7 +45,7 @@ function PropertyCard({_id, Img, availableUnit, price, desc, location,category, 
         />
       </div>
 
-      <div className='bg-blue-800/75 text-white pl-3 rounded-2xl w-42 mt-[-100] mb-15'>
+      <div className='bg-blue-800/65 text-white pl-3 rounded-2xl w-42 mt-[-100] mb-15'>
         <p className="text-xl text-white font-medium ">
           {availableUnit || 0} units available</p>
        </div>
