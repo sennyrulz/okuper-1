@@ -6,6 +6,7 @@ import IndexCarousel from '../components/indexCarousel'
 import propertyData from '../data/property.json'
 
 
+
 function Homepage() {
     // Filter out real property cards
   const propertyItems = propertyData.filter(

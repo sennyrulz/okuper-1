@@ -2,8 +2,9 @@
 import Link from 'next/link'
 
 
-const AdBannerCard = ({ topic, desc, btn }) => (
-    <div className="col-span-full bg-blue-900 text-white rounded-2xl p-6 text-center">
+function AdBannerCard({ topic, desc, btn }) {
+  return ( 
+    <div className="md: min-w-[310px] md:mt-33 mt-0 h-68 col-span-full bg-blue-900 text-white rounded-2xl p-6 text-center content-center">
       <h3 className="text-xl font-semibold mb-2">{topic}</h3>
       <p className="mb-4">{desc}</p>
       {btn && (
@@ -12,5 +13,6 @@ const AdBannerCard = ({ topic, desc, btn }) => (
       )}
     </div>
   );
+};
 
   export default AdBannerCard;

@@ -3,7 +3,7 @@
         "_id": "01",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
+            "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
             "size": 2000
             }
         ],
@@ -21,8 +21,8 @@
         "_id": "02",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
-            "size": 2000
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
             }
         ],
         "availableUnit": "",
@@ -38,8 +38,8 @@
         "_id": "03",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
-            "size": 2000
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
             }
         ],
         "availableUnit": "",
@@ -55,8 +55,8 @@
         "_id": "04",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
-            "size": 2000
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
             }
         ],
         "availableUnit": "",
@@ -72,8 +72,8 @@
         "_id": "05",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
-            "size": 2000
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
             }
         ],
         "availableUnit": "",
@@ -96,8 +96,219 @@
         "_id": "07",
         "Img": [
             {
-            "publicId": "dfdzbuk0c/fully-detached-apartments-for-sale-vgc_on3vew",
-            "size": 2000
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "08",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "09",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "10",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "11",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "12",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+
+    {
+        "_id": "13",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "14",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "15",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "16",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "17",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "18",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "19",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
+            }
+        ],
+        "availableUnit": "",
+        "price": "",
+        "desc": "",
+        "category": "",
+        "numberOfBed": "",
+        "propertyType": "",
+        "numberOfBath": ""
+    },
+    {
+        "_id": "20",
+        "Img": [
+            {
+                "publicId": "fully-detached-apartments-for-sale-vgc_qwlxji",
+                "size": 2000
             }
         ],
         "availableUnit": "",

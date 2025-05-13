@@ -1,18 +1,17 @@
-'use client'
-
-import Nav from '@/components/nav';
-import Footer from '../../components/footer/index';
-import AdBannerCard from '../../components/adBannerCard/index';
-import PropertyCard from '../../components/propertyCard/index'; // ✅ Update this path if different
+import React from 'react';
+import Nav from '../../components/nav';
+import Footer from '../../components/footer';
+import AdBannerCard from '../../components/adBannerCard';
+import PropertyCard from '../../components/propertyCard';
 import propertyData from '../../data/property.json';
 
 function Rent() {
-  // Filter out real property cards
+  // Filter and prepare property data
   const propertyItems = propertyData.filter(
     (item) => item.Img && Array.isArray(item.Img) && item.Img.length > 0 && item._id
   );
 
-  // Insert an ad banner after every 6 property cards
+  // Insert ad banners after every 6 property cards
   const mixedItems = [];
   let counter = 0;
 
@@ -26,7 +25,7 @@ function Rent() {
         isAd: true,
         topic: 'Ad Banner',
         desc: 'This is an Ad',
-        btn: '/ad-link'
+        btn: '/ad-link',
       });
       counter = 0;
     }
@@ -36,18 +35,24 @@ function Rent() {
     <>
       <Nav />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 px-4 py-8 bg-amber-400">
-        {mixedItems.map((item) =>
-          item.isAd ? (
-            <AdBannerCard key={item._id} {...item} />
-          ) : (
-            <PropertyCard key={item._id} {...item} />
-          )
-        )}
-      </div>
+      <main className="bg-gray-50 min-h-screen py-12 px-6 md:px-12">
+        <h1 className="text-3xl font-bold text-blue-800 mb-10 text-center">
+          Properties for Rent
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {mixedItems.map((item) =>
+            item.isAd ? (
+              <AdBannerCard key={item._id} {...item} />
+            ) : (
+              <PropertyCard key={item._id} {...item} />
+            )
+          )}
+        </div>
+      </main>
 
       <Footer />
-      </>
+    </>
   );
 }
 
