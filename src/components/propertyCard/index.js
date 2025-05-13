@@ -20,20 +20,17 @@ function PropertyCard({_id, Img, availableUnit, price, desc, location,category, 
   };
 
   return (
-    <div className="border rounded-2xl p-4 shadow-md bg-white w-80 overflow-hidden hover:shadow-lg transition-shadow duration-300 ">
+    <div className=" min-w-[310px] rounded-2xl p-4 shadow-md bg-white w-80 overflow-hidden hover:shadow-lg transition-shadow duration-300 ">
       <p className='hidden'>{_id}</p>
      
-      {/* ✅ Use legacyBehavior to allow custom <a> with onClick */}
+      
       <Link href="/savedHomes" passHref
         onClick={handleSave}
           className=" ml-60 cursor-pointer"
           title="Save to Favorites">
-      
           <FontAwesomeIcon
             icon={faCircleCheck}
-            className="text-blue-800/65 text-4xl md:text-4xl"
-          />
-        
+            className="text-blue-800/65 text-4xl md:text-4xl"/>
       </Link>
 
       <div className="relative w-full h-48">

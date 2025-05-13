@@ -40,7 +40,7 @@ return (
     <Nav />
     <Banner />
     <StorySection />
-        <div>
+        <div className='px-10 py-10'>
             <h3 className='text-2xl font-bold mb-4'>Tending Homes</h3>
             <IndexCarousel rent={mixedItems} />
         </div>
