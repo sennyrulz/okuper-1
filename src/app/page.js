@@ -1,7 +1,5 @@
-import Nav from '../components/nav'
 import Banner from '../components/bannerIndex'
 import StorySection from '../components/storySection'
-import Footer from '../components/footer'
 import IndexCarousel from '../components/indexCarousel'
 import propertyData from '../data/property.json'
 
@@ -38,14 +36,12 @@ function Homepage() {
 
 return (
     <>
-    <Nav />
     <Banner />
     <StorySection />
         <div className='px-10 py-10'>
-            <h3 className='text-2xl font-bold mb-4'>Tending Homes</h3>
+            <h3 className='text-2xl font-bold mb-4'>Trending Homes</h3>
             <IndexCarousel rent={mixedItems} />
         </div>
-    <Footer />
     </>
     )
 }

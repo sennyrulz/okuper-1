@@ -1,6 +1,4 @@
 import React from 'react';
-import Nav from '../../components/nav';
-import Footer from '../../components/footer';
 import AdBannerCard from '../../components/adBannerCard';
 import PropertyCard from '../../components/propertyCard';
 import propertyData from '../../data/property.json';
@@ -33,8 +31,6 @@ function Rent() {
 
   return (
     <>
-      <Nav />
-
       <main className="bg-gray-50 min-h-screen py-12 px-6 md:px-12">
         <h1 className="text-3xl font-bold text-blue-800 mb-10 text-center">
           Properties for Rent
@@ -51,7 +47,6 @@ function Rent() {
         </div>
       </main>
 
-      <Footer />
     </>
   );
 }
