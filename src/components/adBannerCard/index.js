@@ -1,6 +1,5 @@
-'useclient'
-import Link from 'next/link'
-
+'useclient';
+import Link from 'next/link';
 
 function AdBannerCard({ topic, desc, btn }) {
   return ( 
@@ -13,6 +12,6 @@ function AdBannerCard({ topic, desc, btn }) {
       )}
     </div>
   );
-};
+}
 
-  export default AdBannerCard;
+export default AdBannerCard;

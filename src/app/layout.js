@@ -1,6 +1,7 @@
-import "./globals.css"; // 👈 must include Tailwind CSS here
-import Nav from "@/components/nav";
-import Footer from "@/components/footer";
+import "../style/globals.css"; 
+import "../app/Homepage.css"
+import Nav from "../components/nav"
+import Footer from "../components/footer"
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({

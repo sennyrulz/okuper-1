@@ -2,7 +2,7 @@ import Banner from '../components/bannerIndex'
 import StorySection from '../components/storySection'
 import IndexCarousel from '../components/indexCarousel'
 import propertyData from '../data/property.json'
-
+import '../style/globals.css'
 
 
 function Homepage() {
