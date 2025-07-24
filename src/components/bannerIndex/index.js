@@ -58,7 +58,7 @@ function Banner() {
           <div className="mt-4 md:mt-6 flex flex-col md:flex-row gap-3 md:gap-4 w-full md:w-auto">
             
             <button className="bg-[#0E1D48] flex text-white px-10 gap-2 pt-3 md:px-8 md:py-3 
-            rounded-md text-sm md:text-base hover:bg-white hover:text-[#0E1D48] transition">
+            rounded-md text-sm md:text-base hover:bg-blue-400  hover:text-[#0E1D48] transition">
             <Image
             className="self-start mb-2 md:mb-0"
             src={homeIcon}
